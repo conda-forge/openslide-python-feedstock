@@ -18,11 +18,11 @@ requirements:
     - {{ compiler('c') }}
   host:
     - pip
-    - python >=3.6
+    - python
     - openslide
   run:
     - pillow
-    - python >=3.6
+    - python
     - openslide
 
 test:
