@@ -1,11 +1,11 @@
-About openslide-python
-======================
+About openslide-python-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openslide-python-feedstock/blob/main/LICENSE.txt)
 
 Home: http://openslide.org/
 
 Package license: LGPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openslide-python-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python interface to OpenSlide
 
