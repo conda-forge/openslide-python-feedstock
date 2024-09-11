@@ -10,23 +10,27 @@ source:
   sha256: 0909c6257cd8decfbbd0082e8c0cd94bbe3a89ad31e142cfa9accc8bb959294e
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - python  # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - setuptools
   host:
     - pip
     - python
     - openslide
+    - setuptools
   run:
     - pillow
     - python
     - openslide
+    - setuptools
 
 test:
   imports:
