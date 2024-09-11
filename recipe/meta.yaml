@@ -25,10 +25,12 @@ requirements:
     - pip
     - python
     - openslide
+    - setuptools
   run:
     - pillow
     - python
     - openslide
+    - setuptools
 
 test:
   imports:
