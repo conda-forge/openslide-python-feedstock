@@ -1,5 +1,5 @@
 {% set name = "openslide-python" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a790857a4f717002ddecf7a1b61c5cd86221c81bc9cfd444a71e4c9912cef55c
+  sha256: 95da570994abd8a02db18b8dac68da0b3d3f7eba733bdeeb2a8b52e40e1de1c8
 
 build:
   number: 0
