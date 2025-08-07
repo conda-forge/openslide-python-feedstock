@@ -2,7 +2,7 @@
 {% set version = "1.4.2" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -10,8 +10,7 @@ source:
   sha256: 610d7a71552afe7be33038c10d8a2b20b9824ca2836710870e81f193257411bc
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -37,10 +36,10 @@ test:
     - openslide
 
 about:
-  home: http://openslide.org/
-  license: LGPL-2.0-only
+  home: https://openslide.org/
+  license: LGPL-2.1-only
   license_family: LGPL
-  license_file: LICENSE
+  license_file: COPYING.LESSER
   summary: Python interface to OpenSlide
 
 extra:
