@@ -1,13 +1,13 @@
 {% set name = "openslide-python" %}
-{% set version = "1.4.6" %}
+{% set version = "1.4.7" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5df25a68507c7574b219b548f814b088ade8e04c36990c1472813ee16797bfb1
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 730fed798de683b00c8ef4d956f3d429cc02f2c449eb0d58944e1769ba7983cc
 
 build:
   number: 0
